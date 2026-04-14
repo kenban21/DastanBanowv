@@ -878,8 +878,13 @@ body {
   }
 
   /* скрываем ноту и кольца на мобиле — они мешают */
-  .hero-note { display: none; }
-  .fly-words { display: none; }
+  .hero-note { opacity: 0.4; z-index: 0; }
+  .note-symbol { font-size: 80px; }
+  .r1 { width: 160px; height: 160px; }
+  .r2 { width: 240px; height: 240px; }
+  .r3 { width: 320px; height: 320px; }
+  .fly-words { display: block; }
+  .fw { font-size: 0.7rem; }
 
   .vinyl { width: 160px; height: 160px; }
   .vinyl-inner { width: 50px; height: 50px; }
