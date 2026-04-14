@@ -877,13 +877,13 @@ body {
     letter-spacing: -2px;
   }
 
-  .vinyl { width: 180px; height: 180px; }
-  .vinyl-inner { width: 55px; height: 55px; }
+  /* скрываем ноту и кольца на мобиле — они мешают */
+  .hero-note { display: none; }
+  .fly-words { display: none; }
 
-  .note-symbol { font-size: 130px; }
-  .r1 { width: 180px; height: 180px; }
-  .r2 { width: 270px; height: 270px; }
-  .r3 { width: 360px; height: 360px; }
+  .vinyl { width: 160px; height: 160px; }
+  .vinyl-inner { width: 50px; height: 50px; }
+  .vinyl-center { font-size: 0.8rem; }
 
   .hero-visual { gap: 16px; }
 
@@ -900,12 +900,8 @@ body {
 
 @media (max-width: 500px) {
   .hero-title { font-size: clamp(2.4rem, 14vw, 3.5rem); }
-  .vinyl { width: 140px; height: 140px; }
-  .vinyl-inner { width: 44px; height: 44px; }
-  .note-symbol { font-size: 90px; }
-  .r1 { width: 140px; height: 140px; }
-  .r2 { width: 210px; height: 210px; }
-  .r3 { width: 280px; height: 280px; }
+  .vinyl { width: 130px; height: 130px; }
+  .vinyl-inner { width: 42px; height: 42px; }
   .art-grid { grid-template-columns: 1fr; }
   .art-big { grid-column: span 1; }
   .stats { gap: 24px; }
